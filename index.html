@@ -45,6 +45,7 @@
   --r-input: 12px;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body {
@@ -598,7 +599,6 @@ const CONFIG = {
     video.controls = true; playBtn.hidden = true; document.getElementById("filmLen").hidden = true;
     video.play().catch(() => {});
   });
-
   /* Booking form */
   const form = document.getElementById("bookForm"), btn = document.getElementById("submitBtn"), msg = document.getElementById("formMsg");
   const f = { name: form.name, tg: form.telegram, phone: form.phone, email: form.email };
